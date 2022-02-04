@@ -1,29 +1,24 @@
 import React from "react";
 import { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
-const Home = () => {
+//After looking at the class recording on 2/2 I set it to where clicking on one light causes the next one to shine
+export const Home = () => {
 	const [color, setColor] = useState("red");
 	return (
 		<>
 			<div className="trafficlight">
 				<div
 					className={color == "red" ? "redlit" : "red"}
-					onClick={() => setColor("red")}></div>
-				<div
-					className={color == "yellow" ? "yellowlit" : "yellow"}
 					onClick={() => setColor("yellow")}></div>
 				<div
-					className={color == "green" ? "greenlit" : "green"}
+					className={color == "yellow" ? "yellowlit" : "yellow"}
 					onClick={() => setColor("green")}></div>
+				<div
+					className={color == "green" ? "greenlit" : "green"}
+					onClick={() => setColor("red")}></div>
 			</div>
 		</>
 	);
 };
 
-export default Home;
 
-//fix the height and width of each of the divs with the colors and add border radius and box shadow I believe

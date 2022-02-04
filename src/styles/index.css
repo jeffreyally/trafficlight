@@ -1,3 +1,40 @@
+#app {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.trafficlight{
+    display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: black;
+  width: 20%;
+  height: 50%;
+  margin: auto;
+}
+
+.red{
+    background-color: red;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+}
+.yellow{
+    background-color: yellow;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+}
+.green{
+    background-color: green;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+}
 
 /* 
 
